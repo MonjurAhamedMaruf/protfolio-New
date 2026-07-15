@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monjur Ahamed Maruf - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-indigo-400 tracking-wider">MARUF</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#home" class="hover:text-indigo-400 transition">Home</a>
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (With Profile Picture on the Right) -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full">
+            
+            <!-- Left Side: Content Info -->
+            <div class="text-center md:text-left order-2 md:order-1">
+                <span class="bg-indigo-500/10 text-indigo-400 border border-indigo-500/30 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase mb-4 inline-block">
+                    Section: A | Group: G2 | Roll: 1118049
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 mt-2 leading-tight">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Monjur Ahamed Maruf</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-xl mx-auto md:mx-0">
+                    Computer Science & Engineering Student & Full-Stack Developer. Building functional, beautiful, and user-centric digital experiences.
+                </p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-indigo-600/20">View My Work</a>
+                    <a href="#contact" class="border border-slate-700 hover:bg-slate-800 text-slate-300 px-6 py-3 rounded-lg font-medium transition">Let's Talk</a>
+                </div>
+            </div>
+
+            <!-- Right Side: Photo Content -->
+            <div class="flex justify-center order-1 md:order-2">
+                <div class="relative group">
+                    <!-- Background Glow Effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                    
+                    <!-- Profile Image Wrapper -->
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-800 bg-slate-800 flex items-center justify-center">
+                        <!-- ⚠️ src="profile.jpg" এর জায়গায় আপনার ছবির নাম ও ফরম্যাট ঠিকভাবে বসাবেন -->
+                        <img src="profile.jpg" alt="Monjur Ahamed Maruf" class="w-full h-full object-cover">
+                        
+                        <!-- Fallback User Icon (ছবি না থাকলে এটি শো করবে) -->
+                        <!-- <i class="fa-regular fa-user text-6xl text-slate-600 absolute z-0 pointer-events-none"></i> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Academic Details Section -->
+    <section id="about" class="py-20 px-6 bg-slate-800/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">About <span class="text-indigo-400">Me</span></h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Hello! I'm <strong>Monjur Ahamed Maruf</strong>, a passionate CSE student. I love turning complex problems into simple, beautiful, and intuitive web applications.
+                    </p>
+                    
+                    <!-- Academic Info Card -->
+                    <div class="bg-slate-900/60 border border-slate-700/50 rounded-xl p-5 space-y-3">
+                        <h4 class="text-sm font-semibold uppercase tracking-wider text-indigo-400">Academic Profile</h4>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <span class="text-slate-400">Department:</span> <span class="text-slate-200 font-medium">CSE</span>
+                            <span class="text-slate-400">Section:</span> <span class="text-slate-200 font-medium">A</span>
+                            <span class="text-slate-400">Group:</span> <span class="text-slate-200 font-medium">G2</span>
+                            <span class="text-slate-400">Roll:</span> <span class="text-slate-200 font-medium">1118049</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skills Stack -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-cyan-400">My Skills & Tech Stack</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">HTML,CSS</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">JavaScript</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">React.js</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">Tailwind CSS</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">Node.js & Express</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">SQL / MongoDB</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">Git & GitHub</span>
+                        <span class="bg-slate-800 px-4 py-2 rounded-md border border-slate-700 text-sm">C++,C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured <span class="text-cyan-400">Projects</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-300">
+                    <div class="h-48 bg-indigo-900/50 flex items-center justify-center border-b border-slate-700">
+                        <i class="fa-solid fa-book-bookmark text-5xl text-indigo-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Library Management System</h3>
+                        <p class="text-slate-400 text-sm mb-4">A complete system to manage books, student borrowing records, and histories.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded">Full-Stack</span>
+                            <a href="#" class="text-sm text-cyan-400 hover:underline">View Details <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-300">
+                    <div class="h-48 bg-cyan-900/50 flex items-center justify-center border-b border-slate-700">
+                        <i class="fa-solid fa-gradient text-5xl text-cyan-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Student Dashboard</h3>
+                        <p class="text-slate-400 text-sm mb-4">An interactive, clean portal for students to manage academic data and updates.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-cyan-500/20 text-cyan-300 px-2 py-1 rounded">React & Tailwind</span>
+                            <a href="#" class="text-sm text-cyan-400 hover:underline">View Details <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-300">
+                    <div class="h-48 bg-emerald-900/50 flex items-center justify-center border-b border-slate-700">
+                        <i class="fa-solid fa-terminal text-5xl text-emerald-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Database Management Project</h3>
+                        <p class="text-slate-400 text-sm mb-4">Optimized relational database system with complex query structures and relations.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2 py-1 rounded">SQL / MongoDB</span>
+                            <a href="#" class="text-sm text-cyan-400 hover:underline">View Details <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-slate-800/50">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Get In <span class="text-indigo-400">Touch</span></h2>
+            <p class="text-slate-400 mb-8">Have a project in mind or just want to say hi? Drop me a message!</p>
+            
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://github.com" target="_blank" class="text-2xl text-slate-400 hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="text-2xl text-slate-400 hover:text-indigo-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:maruf@example.com" class="text-2xl text-slate-400 hover:text-cyan-400 transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <form class="space-y-4 max-w-md mx-auto text-left" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Your Name" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 transition">
+                <input type="email" placeholder="Your Email" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 transition">
+                <textarea placeholder="Your Message" rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 transition"></textarea>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg transition shadow-lg shadow-indigo-600/20">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-sm text-slate-500 border-t border-slate-800">
+        <p>&copy; 2026 Monjur Ahamed Maruf. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
